@@ -12,6 +12,6 @@ function setup() {
 
 function draw() {
   ellipse(mouseX, mouseY, 80, 80);
-  even_smaller_text.innerHTML=accelerationX + "aX"; 
-  error_text.innerHTML=accelerationY + "aY";
+  even_smaller_text.innerHTML=accelerationX + " :aX";
+  error_text.innerHTML=accelerationY + " :aY";
 }

@@ -5,14 +5,6 @@ var error_text = document.getElementById("error");
 var mainbody = document.getElementById('bodybaby');
 
 
-var colors = [
-        "rgb(13, 36, 97)", //darkblue
-        "rgb(23, 23, 54)", //evendarkerblue
-        "rgb(242, 242, 242)", //whiter_orangey
-        "rgb(12, 126, 23)" //green
-  ];
-
-
 
 function setup() {
   createCanvas(screen.width, screen.height);
@@ -25,4 +17,14 @@ function draw() {
     fill(255);
   }
   ellipse(mouseX, mouseY, 80, 80);
+
+
+  // create a simple instance
+  // by default, it only adds horizontal recognizers
+  var mc = new Hammer(mainbody);
+
+  // listen to events...
+  mc.on("panleft panright tap press", function(ev) {
+      error_text.innerHTML=ev;
+  });
 }

@@ -25,6 +25,6 @@ function draw() {
 
   // listen to events...
   mc.on("panleft panright tap press", function(ev) {
-      error_text.innerHTML=ev;
+      error_text.innerHTML=ev.type;
   });
 }

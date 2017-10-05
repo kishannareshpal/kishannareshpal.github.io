@@ -17,14 +17,5 @@ function draw() {
     fill(255);
   }
   ellipse(mouseX, mouseY, 80, 80);
-  // error_text.innerHTML=mouseX;
+  error_text.innerHTML=mouseX;
 }
-
-// create a simple instance
-// by default, it only adds horizontal recognizers
-var mc = new Hammer(mainbody);
-
-// listen to events...
-mc.on("panleft panright tap press", function(ev) {
-    error_text.innerHTML=ev.type;
-});

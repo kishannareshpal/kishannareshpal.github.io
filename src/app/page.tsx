@@ -28,7 +28,7 @@ export default function HomePage() {
             />
           ))}
         </Cards.Container>
-      D</div>
+      </div>
 
       <div className='mt-24 px-4'>
         <SectionTitle title="OPEN-SOURCE CONTRIBUTIONS" />

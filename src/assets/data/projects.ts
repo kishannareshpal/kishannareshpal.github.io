@@ -4,6 +4,7 @@ type ProjectLink = {
 }
 
 type Project = {
+  logo?: string,
   name: string,
   description: string,
   links?: ProjectLink[]
@@ -11,6 +12,7 @@ type Project = {
 
 export const projects: Project[] = [
   {
+    logo: require('@/assets/images/projects/exames.png'),
     name: 'Exames Nacionais - Moçambique',
     description: 'A non-profit personal project supported by several students and teachers, with the aim of making it easier for Mozambican students to search for exams taken in previous years, whether from secondary education (with 10th and 12th Grade exams) or Higher education (entrance exams), to help them prepare for the exams that will take place in the coming years. This is the most downloaded and used Free Education app every year in Google Play Store Mozambique.',
     links: [
@@ -19,6 +21,7 @@ export const projects: Project[] = [
     ]
   },
   {
+    logo: require('@/assets/images/projects/laser-chess.png'),
     name: 'Laser Chess',
     description: 'A chess-like board game with lasers!',
     links: [
@@ -27,7 +30,8 @@ export const projects: Project[] = [
     ]
   },
   {
-    name: 'Kuots',
+    logo: require('@/assets/images/projects/kuots-by-denise.png'),
+    name: 'Kuots by Denise',
     description: 'A web application designed for Denise Samuel to seamlessly share her curated collection of favorite quotes with a wide audience.',
     links: [
       { label: 'kuots.net', href: 'https://kuots.net' },
@@ -35,6 +39,7 @@ export const projects: Project[] = [
     ]
   },
   {
+    logo: require('@/assets/images/projects/mareografo.png'),
     name: 'Mareógrafo',
     description: 'Design and Construction of a Telemetric Hydrographic Station (Autonomous and with real time tracking capabilities).',
     links: [
@@ -42,10 +47,12 @@ export const projects: Project[] = [
     ]
   },
   {
+    logo: require('@/assets/images/projects/harvard-university.png'),
     name: 'CS50 Web - HarvardX course projects',
     description: 'All of my CS50 Web Programming with Python and JavaScript course projects.',
     links: [
-      { label: 'Learn more', href: 'https://github.com/kishannareshpal/cs50' }
+      { label: 'Learn more', href: 'https://github.com/kishannareshpal/cs50' },
+      { label: 'Certificate', href: 'https://certificates.cs50.io/c1e0137f-8c92-4f87-b278-0005a2f74af2.pdf?size=letter' }
     ]
   },
   {
@@ -57,6 +64,7 @@ export const projects: Project[] = [
     ]
   },
   {
+    logo: require('@/assets/images/projects/text-url-downloader.png'),
     name: 'Text URL Downloader',
     description: "Download via text URLs on Chrome seamlessly by right-clicking any URL text on a website or pasting a URL directly into the extension's UI from the toolbar icon.",
     links: [
@@ -65,6 +73,7 @@ export const projects: Project[] = [
     ]
   },
   {
+    logo: require('@/assets/images/projects/up-maxixe.png'),
     name: 'Universidade Pedagógica da Maxixe',
     description: 'The official of Universidade Pedagógica da Maxixe. After over 2 years of being active since 2018, the development '
       + 'of this website has been discontinued and shut-down. This decision stems from my relocation from Mozambique '
@@ -75,6 +84,7 @@ export const projects: Project[] = [
     ]
   },
   {
+    logo: require('@/assets/images/projects/prazos.png'),
     name: 'Prazos',
     description: 'Simplify your product expiration date tracking with ease. Get notified in advance when a product is nearing its expiration date.',
     links: [
@@ -82,6 +92,7 @@ export const projects: Project[] = [
     ]
   },
   {
+    logo: require('@/assets/images/projects/up-engenheiros.png'),
     name: 'Universidade Pegagógica Engenheiros',
     description:
       'A private collaborative platform for sharing academic documents among fellow civil engineering colleagues at '

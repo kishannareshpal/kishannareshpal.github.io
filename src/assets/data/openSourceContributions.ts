@@ -4,6 +4,7 @@ type ProjectLink = {
 }
 
 type Project = {
+  logo?: string,
   name: string,
   description: string,
   links?: ProjectLink[]
@@ -41,6 +42,7 @@ export const openSourceContributions: Project[] = [
     ]
   },
   {
+    logo: require('@/assets/images/projects/vscode-easy-terminal-zoom.png'),
     name: 'Easy Terminal Zoom extension for VS Code',
     description: "VSCode extension to control the terminal's font-size with keyboard shortcuts when the terminal is focused.",
     links: [
@@ -111,6 +113,7 @@ export const openSourceContributions: Project[] = [
     ]
   },
   {
+    logo: require('@/assets/images/projects/calc.png'),
     name: 'Calculadora de Megas',
     description: "(en: Data calculator) The lazy man's effective internet data pack calculator. Please note that the app is in Mozambican Portuguese.",
     links: [

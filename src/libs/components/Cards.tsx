@@ -13,7 +13,6 @@ const CardsContainer = ({ children }: PropsWithChildren) => {
 type ProjectCardLink = {
   label: string;
   href: string;
-  icon?: string;
 }
 
 type CardsItem = {
@@ -30,9 +29,10 @@ const CardsItem = ({
     <div className="bg-[#0B2316] text-white w-full md:w-[705px] p-8 rounded-3xl hover:bg-white/5 duration-200">
       {logoSrc ? (
         <Image
+          className="mb-3 bg-gray-100/5 rounded-2xl"
           src={logoSrc!}
-          width={84}
-          height={84}
+          width={72}
+          height={72}
           alt={`Logo of the "${name}" project.`}
         />
       ) : null}

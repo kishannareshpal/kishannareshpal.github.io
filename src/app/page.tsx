@@ -21,6 +21,7 @@ export default function HomePage() {
           {projects.map((project) => (
             <Cards.Item
               key={project.name}
+              logoSrc={project.logo}
               name={project.name}
               description={project.description}
               links={project.links}
@@ -36,6 +37,7 @@ export default function HomePage() {
           {openSourceContributions.map((osc) => (
             <Cards.Item
               key={osc.name}
+              logoSrc={osc.logo}
               name={osc.name}
               description={osc.description}
               links={osc.links}

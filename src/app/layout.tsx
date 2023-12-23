@@ -13,6 +13,16 @@ const monaspaceFont = localFont({
 export const metadata: Metadata = {
   title: 'Kishan Jadav',
   description: 'hello@kishanjadav.com',
+  applicationName: 'Kishan',
+  authors: [{ name: "Kishan Jadav", url: "https://kishanjadav.com" }],
+  category: "Portfolio",
+  twitter: {
+    card: "summary",
+    creator: "Kishan Jadav",
+    description: "hello@kishanjadav.com",
+    title: "Kishan Jadav",
+    site: "https://kishanjadav.com"
+  }
 }
 
 export default function RootLayout({

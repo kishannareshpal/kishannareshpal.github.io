@@ -44,10 +44,10 @@ export const openSourceContributions: Project[] = [
   {
     logo: require('@/assets/images/projects/vscode-easy-terminal-zoom.png'),
     name: 'Easy Terminal Zoom extension for VS Code',
-    description: "VSCode extension to control the terminal's font-size with keyboard shortcuts when the terminal is focused.",
+    description: "VS Code extension to control the terminal's font-size with keyboard shortcuts when the terminal is focused.",
     links: [
       { label: 'Source code', href: 'https://github.com/kishannareshpal/vscode-easy-terminal-zoom' },
-      { label: 'VSCode Marketplace', href: 'https://marketplace.visualstudio.com/items?itemName=kishannareshpal.easy-terminal-zoom' }
+      { label: 'VS Code Marketplace', href: 'https://marketplace.visualstudio.com/items?itemName=kishannareshpal.easy-terminal-zoom' }
     ]
   },
   {
@@ -61,7 +61,7 @@ export const openSourceContributions: Project[] = [
     name: 'SuperDialog',
     description: 'A beautifully crafted Android dialog library.',
     links: [
-      { label: 'SourceCode', href: 'https://github.com/kishannareshpal/SuperDialog' }
+      { label: 'Source code', href: 'https://github.com/kishannareshpal/SuperDialog' }
     ]
   },
   {

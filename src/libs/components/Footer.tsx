@@ -7,21 +7,24 @@ export const Footer = () => {
   }
 
   return (
-    <div className="flex flex-row items-center justify-center p-12 py-24 text-white gap-6">
+    <div className="flex flex-col md:flex-row items-center justify-center p-12 py-24 text-white gap-6">
       <div>
         <Image
-          className="pointer-events-non"
+          className="pointer-events-none animate-pulse"
           src={logo}
           draggable={false}
           alt="Kishan Jadav's logo"
-          width={64}
-          height={64}
+          width={72}
+          height={72}
         />
       </div>
 
-      <div>
+      <div className="text-center md:text-start">
         <p>Copyright © {currentYear()} Kishan Jadav.</p>
-        <p className="opacity-25">Thanks for taking the time to check out my website. Let{"'"}s talk?</p>
+        <p className="opacity-25">
+          Thanks for taking the time to check out my website.{' '}
+          <a href="#description">Let{"'"}s talk?</a>
+        </p>
       </div>
     </div>
   )

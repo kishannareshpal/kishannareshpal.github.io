@@ -33,9 +33,9 @@ export const Description = () => {
           <p className="mt-4">
             <span className="font-semibold text-background">Few facts about me: </span> I am{' '}
             <Tooltip content="Born in 8th August 1999"><span>{age()} years old</span></Tooltip>,
-            originally from <TripAdvisorLink placeId="3652237" label="Inhambane, Mozambique" /> in{' '}
-            <TripAdvisorLink placeId="186334" label="Leicester, United Kingdom" />. Although my native language is Portuguese
-            I speak English fluently. I also enjoy watching{' '} <a href="https://x.com/f1/" className="hover:text-green-500 hover:underline">Formula 1</a>{' '}
+            originally from <TripAdvisorLink placeId="3652237" label="Inhambane, Mozambique" /> living in{' '}
+            <TripAdvisorLink placeId="186334" label="Leicester, United Kingdom" />. Although my native language is Portuguese,
+            I also speak fluent english. I enjoy watching <a href="https://x.com/f1/" className="hover:text-green-500 hover:underline">Formula 1</a>{' '}
             (favorite team: <a href="https://redbullracing.com" className="hover:text-green-500 hover:underline">Red Bull Racing</a>).
           </p>
         </div>

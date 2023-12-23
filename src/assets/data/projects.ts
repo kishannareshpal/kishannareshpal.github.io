@@ -75,7 +75,7 @@ export const projects: Project[] = [
   {
     logo: require('@/assets/images/projects/up-maxixe.png'),
     name: 'Universidade Pedagógica da Maxixe',
-    description: 'The official of Universidade Pedagógica da Maxixe. After over 2 years of being active since 2018, the development '
+    description: 'The official Universidade Pedagógica da Maxixe's website. After over 2 years of being active since 2018, the development '
       + 'of this website has been discontinued and shut-down. This decision stems from my relocation from Mozambique '
       + 'and the subsequent lack of time available for its maintenance. The link provided here is an archived snapshot '
       + 'of the website taken by archive.org.',

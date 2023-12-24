@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import { Providers } from './providers'
 import classNames from 'classnames';
-import './globals.scss'
 import { Footer } from '@/libs/components/Footer';
+import './globals.scss';
 
 const monaspaceFont = localFont({
   src: '../assets/fonts/Mona-Sans.ttf',
@@ -16,12 +16,17 @@ export const metadata: Metadata = {
   applicationName: 'Kishan',
   authors: [{ name: "Kishan Jadav", url: "https://kishanjadav.com" }],
   category: "Portfolio",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'Kishan Jadav'
+  },
   twitter: {
     card: "summary",
     creator: "Kishan Jadav",
     description: "hello@kishanjadav.com",
     title: "Kishan Jadav",
-    site: "https://kishanjadav.com"
+    site: "https://kishanjadav.com",
   }
 }
 
@@ -31,10 +36,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={classNames(monaspaceFont.className, 'selection:bg-primary/25')}>
+    <html lang="en" className='bg-primary selection:bg-primary/25'>
+      <body className={classNames(monaspaceFont.className)}>
         <Providers>
-          {children}
+          <>
+            {children}
+          </>
 
           <Footer />
         </Providers>

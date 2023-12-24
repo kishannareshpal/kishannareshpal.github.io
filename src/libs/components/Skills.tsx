@@ -10,12 +10,13 @@ export const Skills = () => {
         return (
           <Table
             shadow="none"
-            className="border-2 rounded-2xl w-full"
+            className="rounded-2xl w-full"
+            classNames={{ wrapper: 'bg-skill-background text-skill-foreground' }}
             key={category.name}
           >
             <TableHeader>
               <TableColumn
-                className="font-semibold uppercase text-md font-narrow bg-gray-200 text-black break-words whitespace-pre-line leading-tight py-2"
+                className="font-semibold uppercase text-md font-narrow bg-transparent underline text-skill-foreground break-words whitespace-pre-line leading-tight py-2"
               >
                 {category.name}
               </TableColumn>
@@ -24,9 +25,9 @@ export const Skills = () => {
               {category.skills.map((technology) => (
                 <TableRow
                   key={technology}
-                  className="group md:hover:bg-primary/30 duration-100"
+                  className="group duration-100"
                 >
-                  <TableCell className="rounded-lg">{technology}</TableCell>
+                  <TableCell className="rounded-lg md:hover:bg-primary/10">{technology}</TableCell>
                 </TableRow>
               ))}
             </TableBody>

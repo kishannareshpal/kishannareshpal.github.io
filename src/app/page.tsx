@@ -6,10 +6,13 @@ import { Cards } from '@/libs/components/Cards';
 import { Description } from '@/libs/components/Description';
 import { Heading } from '@/libs/components/Heading';
 import { SectionTitle } from '@/libs/components/SectionTitle';
+import { useDarkMode } from 'usehooks-ts';
 
 export default function HomePage() {
+  const { isDarkMode } = useDarkMode(true);
+
   return (
-    <div>
+    <main className={`${isDarkMode ? 'dark' : 'light'} text-foreground bg-background`}>
       <Heading />
 
       <Description />
@@ -45,6 +48,6 @@ export default function HomePage() {
           ))}
         </Cards.Container>
       </div>
-    </div>
+    </main>
   )
 }

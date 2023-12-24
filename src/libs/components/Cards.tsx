@@ -26,10 +26,10 @@ const CardsItem = ({
   logoSrc, name, description, links
 }: CardsItem) => {
   return (
-    <div className="bg-[#0B2316] text-white w-full md:w-[705px] p-8 rounded-3xl hover:bg-white/5 duration-200">
+    <div className="bg-cards-background text-cards-foreground hover:bg-cards-background-hover ring-2 ring-cards-background-outline w-full md:w-[705px] p-8 rounded-3xl duration-200">
       {logoSrc ? (
         <Image
-          className="mb-3 bg-gray-100/5 rounded-2xl"
+          className="mb-3 bg-cards-image-background rounded-2xl"
           src={logoSrc!}
           width={72}
           height={72}
@@ -37,9 +37,8 @@ const CardsItem = ({
         />
       ) : null}
 
-      <p className='text-white font-bold text-2xl md:text-4xl mb-3 break-words'>{name}</p>
-
-      <p className='text-[#DAFFCC] text-lg'>{description}</p>
+      <p className='font-bold text-2xl md:text-4xl mb-3 break-words'>{name}</p>
+      <p className='text-cards-foreground-alt text-lg'>{description}</p>
 
       {links?.length ? (
         <div className='flex gap-3 mt-8 flex-wrap'>
@@ -67,9 +66,9 @@ type CardsItemLink = {
 const CardsItemLink = ({ label, href }: CardsItemLink) => {
   return (
     <a
-      className="ring-2 ring-primary/10 text-white py-1 px-4 font-semibold
+      className="ring-2 ring-cards-link-outline text-cards-link-foreground py-1 px-4 font-semibold
                 rounded-full text-sm flex gap-2 items-center justify-center
-                hover:text-primary hover:bg-background hover:ring-primary duration-300"
+                hover:text-cards-link-hover-foreground hover:bg-cards-link-hover-background hover:ring-cards-link-hover-outline duration-300"
       href={href}
       target='_blank'
     >

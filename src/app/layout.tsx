@@ -4,6 +4,7 @@ import { Providers } from './providers'
 import classNames from 'classnames';
 import { Footer } from '@/libs/components/Footer';
 import './globals.scss';
+import { AppWrapper } from '@/libs/components/AppWrapper';
 
 const monaspaceFont = localFont({
   src: '../assets/fonts/Mona-Sans.ttf',
@@ -36,14 +37,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='bg-primary selection:bg-primary/25'>
+    <html lang="en" className='bg-background selection:bg-primary/25'>
       <body className={classNames(monaspaceFont.className)}>
         <Providers>
-          <>
+          <AppWrapper>
             {children}
-          </>
-
-          <Footer />
+          </AppWrapper>
         </Providers>
       </body>
     </html>

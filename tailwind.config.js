@@ -1,4 +1,4 @@
-const {nextui} = require("@nextui-org/react");
+const { nextui } = require("@nextui-org/react");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -6,129 +6,125 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
-  theme: {
-    extend: {},
-  },
   darkMode: 'class',
   plugins: [
     nextui({
+      prefix: 'kishan',
       themes: {
-        light: {
+        bright: {
           colors: {
-            background: '#F9FBFC',
+            background: '#f9fbfc',
             foreground: {
-              heading: 'black',
-              DEFAULT: 'black'
+              heading: '#000000',
+              DEFAULT: '#000000'
             },
             primary: {
-              DEFAULT: "#2FFF7F",
-              light: '#DAFFCC',
+              DEFAULT: "#2fff7f",
+              light: '#daffcc',
               foreground: {
                 DEFAULT: "#000000"
               },
             },
             section: {
-              foreground: 'black'
+              foreground: '#000000'
             },
-            card: {
+            cards: {
               background: {
-                DEFAULT: 'transparent',
-                hover: 'white',
-                outline: '#E2E8F0',
+                hover: '#ffffff',
+                DEFAULT: '#00000000',
               },
               foreground: {
-                alt: '#0B2316',
-                DEFAULT: 'black',
+                alt: '#0b2316',
+                DEFAULT: '#000000',
               },
+              outline: '#e2e8f0',
               link: {
-                foreground: 'black',
-                background: 'transparent',
+                foreground: '#000000',
+                background: '#00000000',
                 outline: '#dbe0e7',
                 hover: {
-                  foreground: '#15803D',
-                  background: '#DCFCE7',
-                  outline: '#16A34A',
+                  foreground: '#15803d',
+                  background: '#dcfce7',
+                  outline: '#16a34a',
                 },
               },
               image: {
-                background: '#F1F5F9'
+                background: '#f1f5f9'
               }
             },
             description: {
-              background: '#000',
-              foreground: '#fff',
+              background: '#000000',
+              foreground: '#ffffff',
               divider: '#202020'
             },
             contact: {
-              background: '#0B2316',
+              background: '#0b2316',
               foreground: {
-                hover: '#DAFFCC',
-                DEFAULT: 'white'
+                hover: '#daffcc',
+                DEFAULT: '#ffffff'
               }
             },
             skill: {
-              background: '#0B2316',
+              background: '#0b2316',
               foreground: '#ffffff',
             }
           }
         },
-        dark: {
+        dim: {
           colors: {
-            // // Contact: #15803D
-
-            background: '#001A0C',
+            background: '#001a0c',
             foreground: {
-              heading: '#2FFF7F',
-              DEFAULT: 'white'
+              heading: '#2fff7f',
+              DEFAULT: '#ffffff'
             },
             primary: {
-              DEFAULT: "#2FFF7F",
-              light: '#DAFFCC',
+              DEFAULT: "#2fff7f",
+              light: '#daffcc',
               foreground: {
                 DEFAULT: "#000000"
               },
             },
             section: {
-              foreground: '#BBF7D2'
+              foreground: '#bbf7d2'
             },
             cards: {
               background: {
-                DEFAULT: '#0B2316',
                 hover: '#ffffff0d',
-                outline: 'transparent',
+                DEFAULT: '#0b2316',
               },
               foreground: {
-                alt: '#DAFFCC',
-                DEFAULT: 'white',
+                alt: '#daffcc',
+                DEFAULT: '#ffffff',
               },
+              outline: '#00000000',
               link: {
-                foreground: 'white',
-                background: 'transparent',
-                outline: '#0E3921',
+                foreground: '#ffffff',
+                background: '#00000000',
+                outline: '#0e3921',
                 hover: {
-                  foreground: '#2FFF7F',
-                  background: 'transparent',
-                  outline: '#2FFF7F',
+                  foreground: '#2fff7f',
+                  background: '#00000000',
+                  outline: '#2fff7f',
                 },
               },
               image: {
-                background: '#162D22'
+                background: '#162d22'
               }
             },
             description: {
-              background: '#fff',
-              foreground: '#000',
-              divider: '#ddd'
+              background: '#ffffff',
+              foreground: '#000000',
+              divider: '#dddddd'
             },
             contact: {
-              background: '#0B2316',
+              background: '#0b2316',
               foreground: {
-                hover: '#DAFFCC',
-                DEFAULT: 'white'
+                hover: '#daffcc',
+                DEFAULT: '#ffffff'
               }
             },
             skill: {
-              background: '#0B2316',
+              background: '#0b2316',
               foreground: '#ffffff',
             }
           }

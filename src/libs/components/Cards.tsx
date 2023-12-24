@@ -26,7 +26,7 @@ const CardsItem = ({
   logoSrc, name, description, links
 }: CardsItem) => {
   return (
-    <div className="bg-cards-background text-cards-foreground hover:bg-cards-background-hover ring-2 ring-cards-background-outline w-full md:w-[705px] p-8 rounded-3xl duration-200">
+    <div className="bg-cards-background text-cards-foreground hover:bg-cards-background-hover ring-2 ring-cards-outline w-full md:w-[705px] p-8 rounded-3xl duration-200">
       {logoSrc ? (
         <Image
           className="mb-3 bg-cards-image-background rounded-2xl"

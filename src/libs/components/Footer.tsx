@@ -13,7 +13,7 @@ export const Footer = () => {
   }
 
   return (
-    <footer className={`${isDarkMode ? 'dark' : 'light'} flex flex-col md:flex-row items-center justify-center p-12 py-24 gap-6 text-foreground bg-background`}>
+    <footer className="flex flex-col md:flex-row items-center justify-center p-12 py-24 gap-6">
       <div>
         <Image
           className="pointer-events-none animate-pulse"

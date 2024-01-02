@@ -11,8 +11,9 @@
 ## Getting Started
 
 1. Ensure you have the correct NodeJS version supported by this application.
-2. Start up the development server by running `npm run dev`
-3. The website will be hosted at [http://localhost:3000](http://localhost:3000).
+2. Install node dependencies `npm install`
+3. Start up the development server by running `npm start`
+4. The website will be hosted at [http://localhost:3000](http://localhost:3000).
 
 ## Deploy
 

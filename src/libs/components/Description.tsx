@@ -1,6 +1,7 @@
 import { Divider, Accordion, AccordionItem, Tooltip } from "@nextui-org/react";
 import { Skills } from "./Skills";
 import { Contacts } from "./Contacts";
+import { differenceInYears } from "date-fns";
 
 const TripAdvisorLink = ({ placeId, label }: { placeId: string, label: string }) => {
   return (
@@ -16,7 +17,8 @@ const TripAdvisorLink = ({ placeId, label }: { placeId: string, label: string })
 
 export const Description = () => {
   const age = () => {
-    return new Date().getFullYear() - 1999;
+    const birthDate = new Date('1999-08-08');
+    return differenceInYears(new Date(), birthDate);
   }
 
   return (

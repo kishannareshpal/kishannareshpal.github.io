@@ -13,14 +13,18 @@ const monaspaceFont = localFont({
 
 export const metadata: Metadata = {
   title: 'Kishan Jadav',
+  applicationName: 'Kishan Jadav',
   description: 'hello@kishanjadav.com',
-  applicationName: 'Kishan',
   authors: [{ name: "Kishan Jadav", url: "https://kishanjadav.com" }],
+  keywords: ['kishan', 'nareshpal', 'jadav', 'KJ', 'software', 'developer', 'mozambique', 'exames', 'mz', '🇲🇿'],
   category: "Portfolio",
+  creator: 'Kishan Jadav',
+  publisher: 'Kishan Jadav',
+  robots: 'index, follow',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
-    title: 'Kishan Jadav'
+    title: 'Kishan Jadav',
   },
   twitter: {
     card: "summary",

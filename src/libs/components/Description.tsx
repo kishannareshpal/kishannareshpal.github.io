@@ -2,6 +2,7 @@ import { Divider, Accordion, AccordionItem, Tooltip } from "@nextui-org/react";
 import { Skills } from "./Skills";
 import { Contacts } from "./Contacts";
 import { differenceInYears } from "date-fns";
+import { ExternalLink } from "./ExternalLink";
 
 const TripAdvisorLink = ({ placeId, label }: { placeId: string, label: string }) => {
   return (
@@ -33,12 +34,10 @@ export const Description = () => {
           </p>
 
           <p className="mt-4">
-            <span className="font-semibold">Few facts about me: </span> I am{' '}
-            <Tooltip content="Born in 8th August 1999"><span>{age()} years old</span></Tooltip>,
-            originally from <TripAdvisorLink placeId="3652237" label="Inhambane, Mozambique" /> living in{' '}
-            <TripAdvisorLink placeId="186334" label="Leicester, United Kingdom" />. Although my native language is Portuguese,
-            I also speak fluent english. I enjoy watching <a href="https://x.com/f1/" className="hover:text-green-500 hover:underline">Formula 1</a>{' '}
-            (favorite team: <a href="https://redbullracing.com" className="hover:text-green-500 hover:underline">Red Bull Racing</a>).
+            {age()}-year-old, born on August 8th in the beautiful city of <TripAdvisorLink placeId="3652237" label="Inhambane, Mozambique" />, currently residing in <TripAdvisorLink placeId="186334" label="Leicester, United Kingdom" />.
+            Growing up speaking Portuguese as my native language, I&apos;m also fluent in English. You&apos;ll often find me
+            immersed in the thrilling world of <ExternalLink href="https://twitter.com/f1/">Formula 1</ExternalLink>, with <ExternalLink href="https://redbullracing.com">Red Bull Racing</ExternalLink> being my favorite team. Apart from my passion
+            for motorsports, I also have a keen interest in music (<ExternalLink href="https://open.spotify.com/playlist/5oFcuasvDJLsVe8cHWezCz" className="text-gray-500 hover:text-green-500 hover:underline">spotify playlist</ExternalLink>), football (favourite teams being <ExternalLink href="https://twitter.com/FCPorto">FC Porto</ExternalLink> and <ExternalLink href="https://twitter.com/PSG_English">Paris Saint-Germain FC</ExternalLink>), films, food, etcetera.
           </p>
         </div>
 

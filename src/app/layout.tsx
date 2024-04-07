@@ -32,7 +32,8 @@ export const metadata: Metadata = {
     description: "hello@kishanjadav.com",
     title: "Kishan Jadav",
     site: "https://kishanjadav.com",
-  }
+  },
+  metadataBase: new URL('https://kishanjadav.com')
 }
 
 export default function RootLayout({

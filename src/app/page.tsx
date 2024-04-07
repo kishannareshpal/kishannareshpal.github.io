@@ -6,7 +6,6 @@ import { Cards } from '@/libs/components/Cards';
 import { Description } from '@/libs/components/Description';
 import { Heading } from '@/libs/components/Heading';
 import { SectionTitle } from '@/libs/components/SectionTitle';
-import { useDarkMode } from 'usehooks-ts';
 
 export default function HomePage() {
   return (

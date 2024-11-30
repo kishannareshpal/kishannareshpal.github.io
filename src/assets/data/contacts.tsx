@@ -16,8 +16,8 @@ export const contacts: Contact[] = [
   {
     icon: MailboxIcon,
     title: 'EMAIL',
-    info: 'hello@kishanjadav.com',
-    linkHref: 'mailto:kishanjadav.com?subject=Hello Kishan',
+    info: 'hi@kishanjadav.com',
+    linkHref: 'mailto:hi@kishanjadav.com?subject=Hello Kishan',
   },
   {
     icon: SiGithub,

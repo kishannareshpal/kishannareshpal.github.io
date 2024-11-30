@@ -28,16 +28,14 @@ export const Description = () => {
         <div className="text-[18px] md:text-[24px]">
           <p>
             <span className="before:content-['Hello👋'] hover:text-yellow-500 hover:font-black duration-200 relative cursor-none"></span>. I am a self-starter,
-            dedicated and highly motivated full-stack <span className="font-black">Software Engineer</span> with
+            dedicated and highly motivated full-stack <span className="font-bold">Software Engineer</span> with
             extensive technical background, adept at swiftly acquiring and leveraging new skills while building upon past
             experiences with efficiency and applying the industry{"'"}s best practices.
           </p>
 
           <p className="mt-4">
             {age()}-year-old, born on August 8th in the beautiful city of <TripAdvisorLink placeId="3652237" label="Inhambane, Mozambique" />, currently residing in <TripAdvisorLink placeId="186334" label="Leicester, United Kingdom" />.
-            Growing up speaking Portuguese as my native language, I&apos;m also fluent in English. You&apos;ll often find me
-            immersed in the thrilling world of <ExternalLink href="https://twitter.com/f1/">Formula 1</ExternalLink>, with <ExternalLink href="https://redbullracing.com">Red Bull Racing</ExternalLink> being my favorite team. Apart from my passion
-            for motorsports, I also have a keen interest in music (<ExternalLink href="https://open.spotify.com/playlist/5oFcuasvDJLsVe8cHWezCz" className="text-gray-500 hover:text-green-500 hover:underline">spotify playlist</ExternalLink>), football (favourite teams being <ExternalLink href="https://twitter.com/FCPorto">FC Porto</ExternalLink> and <ExternalLink href="https://twitter.com/PSG_English">Paris Saint-Germain FC</ExternalLink>), films, food, etcetera.
+            Fluent in Portuguese, my native language, and English. I enjoy a variety of things in my free time but music is my main source of creativity and focus every day <span className="text-gray-400">(</span><ExternalLink href="https://open.spotify.com/playlist/5oFcuasvDJLsVe8cHWezCz" className="text-gray-400 hover:text-green-500 hover:underline">my spotify playlist</ExternalLink><span className="text-gray-400">)</span>.
           </p>
         </div>
 

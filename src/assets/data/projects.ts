@@ -12,6 +12,15 @@ type Project = {
 
 export const projects: Project[] = [
   {
+    logo: require('@/assets/images/projects/minisudoku-for-watch.png'),
+    name: 'MiniSudoku for Apple Watch',
+    description: 'Sudoku on the go, reimagined. A full sudoku experience on your wrist.',
+    links: [
+      { label: 'App Store (only on Apple Watch)', href: 'https://apps.apple.com/us/app/minisudoku-for-watch/id6642665445' },
+      { label: 'Source code', href: 'https://github.com/kishannareshpal/sudoku' }
+    ]
+  },
+  {
     logo: require('@/assets/images/projects/exames.png'),
     name: 'Exames Nacionais - Moçambique',
     description: 'A non-profit personal project supported by several students and teachers, with the aim of making it easier for Mozambican students to search for exams taken in previous years, whether from secondary education (with 10th and 12th Grade exams) or Higher education (entrance exams), to help them prepare for the exams that will take place in the coming years. This is the most downloaded and used Free Education app every year in Google Play Store Mozambique.',
@@ -34,8 +43,7 @@ export const projects: Project[] = [
     name: 'Kuots by Denise',
     description: 'A web application designed for Denise Samuel to seamlessly share her curated collection of favorite quotes with a wide audience.',
     links: [
-      { label: 'kuots.net', href: 'https://kuots.net' },
-      { label: 'Denise Samuel', href: 'https://www.instagram.com/denise_samuell' },
+      { label: 'kuots.net', href: 'https://kuots.net' }
     ]
   },
   {

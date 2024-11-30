@@ -28,7 +28,7 @@ export const openSourceContributions: Project[] = [
   },
   {
     name: 'hyper-cool-theme',
-    description: 'A beautiful dark theme for Hyper terminal.',
+    description: 'A dark theme for Hyper terminal.',
     links: [
       { label: 'Source code', href: 'https://github.com/kishannareshpal/hyper-cool-theme' },
       { label: 'Hyper terminal app', href: 'https://hyper.is' }

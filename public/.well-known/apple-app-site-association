@@ -1,0 +1,27 @@
+{
+    "applinks": {
+        "details": [
+            {
+                "appIDs": [
+                    "75D56365P2.com.kishannareshpal.kishanjadav"
+                ],
+                "components": [
+                    {
+                        "/": "*",
+                        "comment": "Matches all routes"
+                    }
+                ]
+            }
+        ]
+    },
+    "activitycontinuation": {
+        "apps": [
+            "75D56365P2.com.kishannareshpal.kishanjadav"
+        ]
+    },
+    "webcredentials": {
+        "apps": [
+            "75D56365P2.com.kishannareshpal.kishanjadav"
+        ]
+    }
+}

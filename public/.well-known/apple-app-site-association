@@ -11,6 +11,12 @@
                         "comment": "Matches all routes"
                     }
                 ]
+            },
+            {
+                "appID": "75D56365P2.com.kishannareshpal.kishanjadav",
+                "paths": [
+                    "/*"
+                ]
             }
         ]
     },
